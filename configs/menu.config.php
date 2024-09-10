@@ -14,5 +14,9 @@ $menuConfig = [
             "slug" => "contacts",
             "name" => "Contacts"
         ],
+        [
+            "slug" => "login",
+            "name" => "Se Connecter"
+        ],  
     ]
 ];

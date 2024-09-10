@@ -1,5 +1,5 @@
 <?php 
-$contactsConfig = [
+$loginConfig = [
     [
         "username" => "Jin",
         "password" => "1234"
