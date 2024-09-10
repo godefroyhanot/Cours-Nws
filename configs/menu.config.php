@@ -4,19 +4,27 @@ $menuConfig = [
     "pages" => [
                 [
             "slug" => "home",
-            "name" => "Home"
+            "name" => "Home",
         ],
         [
             "slug" => "profile",
-            "name" => "Profile"
+            "name" => "Profile",
+            "authenticated" => true,
+
         ],
               [
             "slug" => "contacts",
-            "name" => "Contacts"
+            "name" => "Contacts",
         ],
         [
             "slug" => "login",
-            "name" => "Se Connecter"
-        ],  
+            "name" => "Se Connecter",
+            "authenticated" => false,
+        ], 
+        [
+            "slug" => "logout",
+            "name" => "Se Donnecter",
+            "authenticated" => true,
+        ],   
     ]
 ];

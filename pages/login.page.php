@@ -10,13 +10,11 @@ function login($username, $password, $loginConfig){
     }
     return false;
 }
-$isLogged =false;
 
 if(isset($_POST) && count($_POST) && isset($_POST["username"]) && isset($_POST["password"])){
-  $isLogged = login($_POST["username"], $_POST["password"], $loginConfig);
- echo "Vous etes bien connectés ";
+  $_SESSION["isLogged"] = login($_POST["username"], $_POST["password"], $loginConfig);
 } 
-if(!$isLogged) { 
+if(! $_SESSION["isLogged"]) { 
 ?>
     <form action="#" method="post" >
 

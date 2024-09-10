@@ -46,7 +46,23 @@ function getPage(){
     }
 }
 
-
+function displayMenu($menuConfig){
+        foreach ($menuConfig["pages"] as $page) {
+        if(
+            !isset($page["authenticated"]) ||
+            ($page["authenticated"] && $_SESSION['isLogged']) ||
+            (!$page["authenticated"] && !$_SESSION['isLogged']) 
+            
+        
+        ){
+            
+             echo  "<li class=\"menuButton\"><a href=\"?page=". $page["slug"]."\">"
+         . $page["name"] . "
+        </a></li>";
+        }
+    //    var_dump($_SESSION["isLogged"]);
+    }
+}
 
 
 
