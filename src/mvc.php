@@ -19,16 +19,34 @@ function getInclude($includeName){
        
     if(file_exists($include)){
         //try to get config
-    $config = './configs/' . $includeName . '.config.php';
+         $config = './configs/' . $includeName . '.config.php';
         if(file_exists($config)){
             require_once $config;
         }
-         
-
 
         include $include;
     }
 }
+
+function getPage(){
+
+    if(isset($_GET["page"])){
+
+    $page = './pages/' . $_GET['page'] . '.page.php';
+       
+    if(file_exists($page)){
+           $config = './configs/' . $_GET['page'] . '.config.php';
+        if(file_exists($config)){
+            require_once $config;
+        }
+        require_once $page;
+    } 
+    } else {
+        require_once "./pages/home.page.php";
+    }
+}
+
+
 
 
 

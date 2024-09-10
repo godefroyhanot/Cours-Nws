@@ -10,5 +10,9 @@ $menuConfig = [
             "slug" => "profile",
             "name" => "Profile"
         ],
+              [
+            "slug" => "contacts",
+            "name" => "Contacts"
+        ],
     ]
 ];
