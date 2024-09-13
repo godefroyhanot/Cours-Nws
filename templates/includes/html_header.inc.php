@@ -8,5 +8,6 @@
 </head>
 <body>
   <?php 
-    getInclude('menu'); 
+    // getLayout('menu'); 
+    // getInclude('toto');
   ?>

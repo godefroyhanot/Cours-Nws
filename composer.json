@@ -1,0 +1,20 @@
+{
+    "name": "godefroy/coursnws",
+    "description": "Super framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Godefroy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "godefroyhanot",
+            "email": "godefroy.hanot@hotmail.fr"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
+    }
+}
