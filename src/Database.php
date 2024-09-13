@@ -1,5 +1,5 @@
 <?php
-
+namespace Jin;
 class Database
 {
 
